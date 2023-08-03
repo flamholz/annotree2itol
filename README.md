@@ -7,6 +7,8 @@ Scripts for moving AnnoTree annotations to iTOL
 
 ## Steps
 
+Before starting, you should download or clone this whole repository. It is not sufficient to download the script itself, since it relies on some data in the `gtdb/` directory. 
+
 1. Load AnnoTree and download results for the queries of your choosing. 
 
 AnnoTree supports various types of queries, including KEGG IDs (e.g., K00370 for NarG) or PFAMs (e.g., PF00092 for the von Willebrand factor type A). After your results load, click the "All query results" button to download the file. The file will be named "annotree_hits.csv" so definitely rename it so you remember what you searched for. See `data/080323_CAs/K01673_beta_CA.csv` for example.
