@@ -54,7 +54,7 @@ $ python scripts/annotree2dataset.py -i data/080323_CAs/K01672_alpha_CA.csv \
     -a phylum -t binary --presence_absence -o my_iTOL_dataset.txt
 ```
 
-Notice that the `-o` option indicates that we are saving output to a file of our choosing. Feel free to change this option. 
+Here we've given a list of files for the `-i` option, so the script will collate results from multiple searches. Each of those files has an associated label given to the `-l` option in the same order. Notice that you can repeat lablels if, as in this case, you want to lump together two different searches under the same name. By setting `-a phylum` we indicated that we are aggregating data at the phylum level. `-t binary` indicates that we are making a binary dataset and `--presence_absence` indicates that we want to binarize the counts at the species level, i.e. a genome either has or does not have some gene, instead of having 0, 1, or 2 hits. The `-o` option indicates that we are saving output to a file of our choosing. Feel free to change this option. 
 
 4. Upload the Newick tree file to [iTOL](https://itol.embl.de/upload.cgi).
 
