@@ -44,7 +44,7 @@ optional arguments:
                         Threshold for binarizing counts or normalized counts.
 ```
 
-I've included example data in the repository so that you can run the script yourself. If you run this commond from the repository root directory, it will generate a dataset marking the presence or absence of several genes at the phylum level. 
+I've included example data in the repository so that you can run the script yourself. If you run this command from the repository root directory, it will generate a dataset marking the presence or absence of several genes at the phylum level. 
 
 ```console
 $ python scripts/annotree2dataset.py -i data/080323_CAs/K01672_alpha_CA.csv \
