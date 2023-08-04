@@ -152,7 +152,6 @@ def main():
         normed.columns = [label]
         count_cols.append(normed)
     annotree_counts = pd.concat(count_cols, axis=1)
-    annotree_counts = annotree_counts.dropna(axis=0, how='all')
 
     # If they provided the same label to multiple files, sum them.
     annotree_counts = annotree_counts.fillna(0).groupby(
